@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Portofolio — Muhamma Bilal Abdulhaq</title>
+  <meta name="description" content="Portofolio pribadi [Nama Anda] — informasi diri, keterampilan, pengalaman, dan contoh karya.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Skip link untuk akses keyboard / screen reader -->
+  <a href="#main-content" class="skip-link" style="position:absolute;left:-9999px;top:auto;overflow:hidden;">
+    Lewati ke konten utama
+  </a>
+
+  <header role="banner" aria-label="Header portofolio">
+    <h1 id="site-title">Muhammad Bilal Abdulhaq </h1>
+    <p id="intro">Hai! Saya Muhammad Bilal Abdulhaq. Saya tertarik di bidang web development, desain UI/UX, dan pemecahan masalah menggunakan teknologi.</p>
+
+    <nav role="navigation" aria-label="Navigasi utama">
+      <ul>
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#skills">Keahlian</a></li>
+        <li><a href="#experience">Pendidikan & Pengalaman</a></li>
+        <li><a href="#works">Contoh Karya</a></li>
+        <li><a href="#contact">Kontak</a></li>
+        <li><a href="kumpulan tugas.html">kumpulan tugas</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content" role="main" aria-labelledby="site-title">
+
+    <!-- Section: About / Informasi pribadi -->
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">Tentang Saya</h2>
+
+      <article aria-label="Deskripsi diri singkat">
+        <figure role="group" aria-labelledby="photo-caption">
+          <!-- Ganti src dengan foto Anda; pastikan ukuran & rasio sesuai -->
+          <img src="foto1.jpg" alt="Foto kepala dan bahu [Nama Anda] mengenakan kemeja biru, tersenyum, latar netral" width="240" height="320">
+          <figcaption id="photo-caption">Foto: pakai seragam batik sma </figcaption>
+        </figure>
+
+        <p>
+          Saya dari mahasiswa dari universitas mayasari bakti,di sini saya membangun mimpi yg setinggi mungkin
+        </p>
+      </article>
+    </section>
+
+    <!-- Section: Skills / Keahlian -->
+    <section id="skills" aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Daftar Keahlian</h2>
+
+      <aside aria-labelledby="skills-desc">
+        <p id="skills-desc">Keahlian teknis dan alat yang sering saya gunakan:</p>
+      </aside>
+
+      <ul aria-label="Daftar keahlian">
+        <li>HTML5 semantik & aksesibilitas (landmarks, ARIA, alt, label)</li>
+        <li>CSS dasar (layout, box model) — (catatan: halaman ini HTML murni)</li>
+     
+      </ul>
+
+      <!-- contoh penggunaan dl (definisi) untuk menunjukkan pemahaman struktur HTML -->
+      <dl>
+        <dt>Role</dt>
+        <dd>Memberikan konteks aksesibilitas ke elemen (mis. role="navigation").</dd>
+        <dt>Alt text</dt>
+        <dd>Deskripsi gambar yang membantu pembaca layar memahami isi gambar.</dd>
+      </dl>
+    </section>
+
+    <!-- Section: Education & Experience with table -->
+    <section id="experience" aria-labelledby="experience-heading">
+      <h2 id="experience-heading">Riwayat Pendidikan & Pengalaman</h2>
+
+      <table role="table" aria-label="Tabel riwayat pendidikan dan pengalaman">
+        <caption>Ringkasan pendidikan dan pekerjaan</caption>
+
+        <thead>
+          <tr>
+            <th scope="col">Tahun</th>
+            <th scope="col">Institusi / Perusahaan</th>
+            <th scope="col">Posisi / Program</th>
+            <th scope="col">Deskripsi</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>2025 - 2029</td>
+            <td>Universitas mayasari bakti</td>
+            <td>Teknik Informatika</td>
+            <td>Gelar Sarjana; fokus pada pengembangan web dan basis data.</td>
+          </tr>
+          <tr>
+            <td>2025</td>
+            <td>Freelance</td>
+            <td>Web Developer</td>
+            <td>Membangun situs portofolio & landing page untuk klien kecil.</td>
+          </tr>
+        </tbody>
+
+        <tfoot>
+          <!-- contoh penggunaan colspan (minimal satu colspan sesuai ketentuan) -->
+          <tr>
+            <td colspan="2">Total pengalaman pendidikan & kerja</td>
+            <td colspan="2">3+ tahun (gabungan pendidikan & proyek)</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <!-- Section: Works / Contoh Karya -->
+    <section id="works" aria-labelledby="works-heading">
+      <h2 id="works-heading">Contoh Karya</h2>
+
+      <article aria-labelledby="work1-title">
+        <h3 id="work1-title"><a href="#" aria-label="Buka proyek landing page contoh">Landing Page Produk — Contoh</a></h3>
+        <p>Deskripsi singkat: Landing page produk sederhana dengan aksesibilitas keyboard dan heading terstruktur.</p>
+      </article>
+
+      <article aria-labelledby="work2-title">
+        <h3 id="work2-title"><a href="#" aria-label="Buka proyek portofolio klien">Portofolio Klien</a></h3>
+        <p>Deskripsi singkat: Portofolio untuk fotografer, menyertakan galeri dan metadata gambar yang terstruktur.</p>
+      </article>
+
+      <!-- Gunakan figure untuk screenshot/preview karya -->
+      <figure aria-hidden="false">
+        <img src="work-screenshot.jpg" alt="Tangkapan layar contoh landing page, menampilkan header, hero, dan tombol ajakan bertindak">
+        <figcaption>Screenshot: contoh proyek landing page.</figcaption>
+      </figure>
+    </section>
+
+    <!-- Section: Contact dengan form (Accessibility: label + fieldset + legend) -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Kontak</h2>
+
+      <form action="#" method="post" aria-label="Formulir kontak sederhana">
+        <fieldset>
+          <legend>Hubungi saya</legend>
+
+          <p>
+            <label for="name">Nama:</label><br>
+            <input id="name" name="name" type="text" required aria-required="true">
+          </p>
+
+          <p>
+            <label for="email">Email:</label><br>
+            <input id="email" name="email" type="email" required aria-required="true">
+          </p>
+
+          <p>
+            <label for="message">Pesan:</label><br>
+            <textarea id="message" name="message" rows="4"></textarea>
+          </p>
+
+          <p>
+            <button type="submit">Kirim</button>
+          </p>
+        </fieldset>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Aside: informasi tambahan / tautan -->
+  <aside aria-labelledby="aside-heading" role="complementary">
+    <h2 id="aside-heading">Info Tambahan</h2>
+    <p>Temukan saya di:</p>
+    <ul>
+      <li><a href="#" aria-label="Profil GitHub">GitHub</a></li>
+      <li><a href="#" aria-label="Profil LinkedIn">LinkedIn</a></li>
+    </ul>
+  </aside>
+
+  <footer role="contentinfo" aria-label="Footer portofolio">
+    <p>&copy; <span id="year">2025</span> Muhammad Bilal Abdulhaq. Semua hak cipta.</p>
+    <p>
+      <small>
+        Halaman ini dibuat dengan HTML murni dan memuat praktik aksesibilitas: landmark, label, alt text, tabel terstruktur, form dengan <code>label</code>, serta mekanisme navigasi keyboard.
+      </small>
+    </p>
+  </footer>
+
+</body>
+</html>
