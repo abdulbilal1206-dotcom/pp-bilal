@@ -1,189 +1,211 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Portofolio — Muhamma Bilal Abdulhaq</title>
-  <meta name="description" content="Portofolio pribadi [Nama Anda] — informasi diri, keterampilan, pengalaman, dan contoh karya.">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroSmart Farm | Modern Smart Farming</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <!-- Skip link untuk akses keyboard / screen reader -->
-  <a href="#main-content" class="skip-link" style="position:absolute;left:-9999px;top:auto;overflow:hidden;">
-    Lewati ke konten utama
-  </a>
-
-  <header role="banner" aria-label="Header portofolio">
-    <h1 id="site-title">Muhammad Bilal Abdulhaq </h1>
-    <p id="intro">Hai! Saya Muhammad Bilal Abdulhaq. Saya tertarik di bidang web development, desain UI/UX, dan pemecahan masalah menggunakan teknologi.</p>
-
-    <nav role="navigation" aria-label="Navigasi utama">
-      <ul>
-        <li><a href="#about">Tentang</a></li>
-        <li><a href="#skills">Keahlian</a></li>
-        <li><a href="#experience">Pendidikan & Pengalaman</a></li>
-        <li><a href="#works">Contoh Karya</a></li>
-        <li><a href="#contact">Kontak</a></li>
-        <li><a href="kumpulan tugas.html">kumpulan tugas</a></li>
-      </ul>
+    <nav>
+        <div class="container nav-wrapper">
+            <div class="logo">AgroSmart <span>Farm</span></div>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="registration.html" class="btn-nav">Daftar</a></li>
+            </ul>
+        </div>
     </nav>
-  </header>
 
-  <main id="main-content" role="main" aria-labelledby="site-title">
-
-    <!-- Section: About / Informasi pribadi -->
-    <section id="about" aria-labelledby="about-heading">
-      <h2 id="about-heading">Tentang Saya</h2>
-
-      <article aria-label="Deskripsi diri singkat">
-        <figure role="group" aria-labelledby="photo-caption">
-          <!-- Ganti src dengan foto Anda; pastikan ukuran & rasio sesuai -->
-          <img src="foto1.jpg" alt="Foto kepala dan bahu [Nama Anda] mengenakan kemeja biru, tersenyum, latar netral" width="240" height="320">
-          <figcaption id="photo-caption">Foto: pakai seragam batik sma </figcaption>
-        </figure>
-
-        <p>
-          Saya dari mahasiswa dari universitas mayasari bakti,di sini saya membangun mimpi yg setinggi mungkin
-        </p>
-      </article>
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>Smart Farming for a Better Future</h1>
+            <p>Edukasi pertanian modern berbasis teknologi IoT untuk generasi muda.</p>
+            <a href="registration.html" class="btn-cta">Daftar Kunjungan</a>
+        </div>
     </section>
 
-    <!-- Section: Skills / Keahlian -->
-    <section id="skills" aria-labelledby="skills-heading">
-      <h2 id="skills-heading">Daftar Keahlian</h2>
-
-      <aside aria-labelledby="skills-desc">
-        <p id="skills-desc">Keahlian teknis dan alat yang sering saya gunakan:</p>
-      </aside>
-
-      <ul aria-label="Daftar keahlian">
-        <li>HTML5 semantik & aksesibilitas (landmarks, ARIA, alt, label)</li>
-        <li>CSS dasar (layout, box model) — (catatan: halaman ini HTML murni)</li>
-     
-      </ul>
-
-      <!-- contoh penggunaan dl (definisi) untuk menunjukkan pemahaman struktur HTML -->
-      <dl>
-        <dt>Role</dt>
-        <dd>Memberikan konteks aksesibilitas ke elemen (mis. role="navigation").</dd>
-        <dt>Alt text</dt>
-        <dd>Deskripsi gambar yang membantu pembaca layar memahami isi gambar.</dd>
-      </dl>
+    <section class="stats">
+        <div class="container grid-3">
+            <div class="stat-card"><h3>2</h3><p>Lokasi Kebun</p></div>
+            <div class="stat-card"><h3>120+</h3><p>Kunjungan Sekolah</p></div>
+            <div class="stat-card"><h3>10+</h3><p>Program Edukasi</p></div>
+        </div>
     </section>
 
-    <!-- Section: Education & Experience with table -->
-    <section id="experience" aria-labelledby="experience-heading">
-      <h2 id="experience-heading">Riwayat Pendidikan & Pengalaman</h2>
+    <section id="about" class="container">
+        <div class="about-flex">
+            <div class="about-text">
+                <h2>Our Story</h2>
+                <p>AgroSmart Farm adalah startup yang mengintegrasikan teknologi IoT dalam pertanian untuk menciptakan wisata edukasi yang interaktif.</p>
+                <h3>Visi & Misi</h3>
+                <p>Menjadi pusat edukasi pertanian modern berbasis teknologi di Indonesia.</p>
+                <div class="values">
+                    <span>Edukasi</span> • <span>Inovasi</span> • <span>Sustainability</span> • <span>Teknologi</span>
+                </div>
+            </div>
+            <div class="team-photos grid-3">
+                <img src="petani ajah.jpeg" alt="Petani">
+                <img src="foto teknisi.jpeg" alt="Teknisi">
+                <img src="foto edukator.jpeg" alt="Edukator">
 
-      <table role="table" aria-label="Tabel riwayat pendidikan dan pengalaman">
-        <caption>Ringkasan pendidikan dan pekerjaan</caption>
 
-        <thead>
-          <tr>
-            <th scope="col">Tahun</th>
-            <th scope="col">Institusi / Perusahaan</th>
-            <th scope="col">Posisi / Program</th>
-            <th scope="col">Deskripsi</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          <tr>
-            <td>2025 - 2029</td>
-            <td>Universitas mayasari bakti</td>
-            <td>Teknik Informatika</td>
-            <td>Gelar Sarjana; fokus pada pengembangan web dan basis data.</td>
-          </tr>
-          <tr>
-            <td>2025</td>
-            <td>Freelance</td>
-            <td>Web Developer</td>
-            <td>Membangun situs portofolio & landing page untuk klien kecil.</td>
-          </tr>
-        </tbody>
-
-        <tfoot>
-          <!-- contoh penggunaan colspan (minimal satu colspan sesuai ketentuan) -->
-          <tr>
-            <td colspan="2">Total pengalaman pendidikan & kerja</td>
-            <td colspan="2">3+ tahun (gabungan pendidikan & proyek)</td>
-          </tr>
-        </tfoot>
-      </table>
+            </div>
+        </div>
     </section>
 
-    <!-- Section: Works / Contoh Karya -->
-    <section id="works" aria-labelledby="works-heading">
-      <h2 id="works-heading">Contoh Karya</h2>
-
-      <article aria-labelledby="work1-title">
-        <h3 id="work1-title"><a href="#" aria-label="Buka proyek landing page contoh">Landing Page Produk — Contoh</a></h3>
-        <p>Deskripsi singkat: Landing page produk sederhana dengan aksesibilitas keyboard dan heading terstruktur.</p>
-      </article>
-
-      <article aria-labelledby="work2-title">
-        <h3 id="work2-title"><a href="#" aria-label="Buka proyek portofolio klien">Portofolio Klien</a></h3>
-        <p>Deskripsi singkat: Portofolio untuk fotografer, menyertakan galeri dan metadata gambar yang terstruktur.</p>
-      </article>
-
-      <!-- Gunakan figure untuk screenshot/preview karya -->
-      <figure aria-hidden="false">
-        <img src="work-screenshot.jpg" alt="Tangkapan layar contoh landing page, menampilkan header, hero, dan tombol ajakan bertindak">
-        <figcaption>Screenshot: contoh proyek landing page.</figcaption>
-      </figure>
+    <section id="programs" class="bg-light">
+        <div class="container">
+            <h2 class="text-center">Program Edukasi</h2>
+            <table class="program-table">
+                <thead>
+                    <tr>
+                        <th>Program</th>
+                        <th>Durasi</th>
+                        <th>Harga</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Edukasi Smart Farming</td><td>3 Jam</td><td>Rp 75.000</td></tr>
+                    <tr><td>Workshop IoT Pertanian</td><td>4 Jam</td><td>Rp 120.000</td></tr>
+                    <tr><td>Wisata Kebun Organik</td><td>2 Jam</td><td>Rp 50.000</td></tr>
+                </tbody>
+            </table>
+        </div>
     </section>
 
-    <!-- Section: Contact dengan form (Accessibility: label + fieldset + legend) -->
-    <section id="contact" aria-labelledby="contact-heading">
-      <h2 id="contact-heading">Kontak</h2>
-
-      <form action="#" method="post" aria-label="Formulir kontak sederhana">
-        <fieldset>
-          <legend>Hubungi saya</legend>
-
-          <p>
-            <label for="name">Nama:</label><br>
-            <input id="name" name="name" type="text" required aria-required="true">
-          </p>
-
-          <p>
-            <label for="email">Email:</label><br>
-            <input id="email" name="email" type="email" required aria-required="true">
-          </p>
-
-          <p>
-            <label for="message">Pesan:</label><br>
-            <textarea id="message" name="message" rows="4"></textarea>
-          </p>
-
-          <p>
-            <button type="submit">Kirim</button>
-          </p>
-        </fieldset>
-      </form>
+    <section class="container">
+        <h2>Our Facilities</h2>
+        <ul class="facility-list">
+            <li>🌿 Green House</li>
+            <li>🤖 Sensor IoT</li>
+            <li>🛠️ Area Workshop</li>
+            <li>🏡 Saung Edukasi</li>
+            <li>📶 WiFi Area</li>
+        </ul>
     </section>
 
-  </main>
+    <section id="gallery" class="container">
+        <h2 class="text-center">Gallery</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item"><img src="ft green house.jpeg" alt="Gallery"></div>
+            <div class="gallery-item"><img src="ft densor lot.jpeg" alt="Gallery"></div>
+            <div class="gallery-item"><img src="ft area wokshop.jpeg" alt="Gallery"></div>
+            <div class="gallery-item"><img src="ft saung edukasi.jpeg" alt="Gallery"></div>
+            <div class="gallery-item"><img src="ft wifi.jpeg" alt="Gallery"></div>
+        </div>
+    </section>
 
-  <!-- Aside: informasi tambahan / tautan -->
-  <aside aria-labelledby="aside-heading" role="complementary">
-    <h2 id="aside-heading">Info Tambahan</h2>
-    <p>Temukan saya di:</p>
-    <ul>
-      <li><a href="#" aria-label="Profil GitHub">GitHub</a></li>
-      <li><a href="#" aria-label="Profil LinkedIn">LinkedIn</a></li>
-    </ul>
-  </aside>
+    <section id="contact" class="bg-dark text-white">
+        <div class="container grid-2">
+            <div>
+                <h3>Lokasi Kami</h3>
+                <p>📍 Tasikmalaya: Jl. Pertanian No. 10</p>
+                <p>📍 Garut: Jl. Edukasi No. 5</p>
+                <div class="map-placeholder">Map Placeholder</div>
+            </div>
+            <div>
+                <h3>Kontak</h3>
+                <p>Email: info@agrosmart.com</p>
+                <p>WA: 0812-3456-7890</p>
+                <p>IG: @agrosmartfarm</p>
+            </div>
+        </div>
+    </section>
 
-  <footer role="contentinfo" aria-label="Footer portofolio">
-    <p>&copy; <span id="year">2025</span> Muhammad Bilal Abdulhaq. Semua hak cipta.</p>
-    <p>
-      <small>
-        Halaman ini dibuat dengan HTML murni dan memuat praktik aksesibilitas: landmark, label, alt text, tabel terstruktur, form dengan <code>label</code>, serta mekanisme navigasi keyboard.
-      </small>
-    </p>
-  </footer>
+    <footer>
+        <p>&copy; 2026 AgroSmart Farm. Built by [Nama Lengkap]</p>
+    </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Daftar Kunjungan - AgroSmart Farm</title>
+    <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+    <div class="form-container">
+        <a href="index.html">← Kembali ke Beranda</a>
+        <h2>Form Pendaftaran Kunjungan</h2>
+        <form action="#">
+            <div class="form-group">
+                <label>Nama Lengkap *</label>
+                <input type="text" required>
+            </div>
+            <div class="form-group">
+                <label>Email *</label>
+                <input type="email" required>
+            </div>
+            <div class="form-group">
+                <label>Nomor HP (WhatsApp) *</label>
+                <input type="tel" required>
+            </div>
+            <div class="form-group">
+                <label>Asal Instansi/Sekolah</label>
+                <input type="text">
+            </div>
+            <div class="grid-2">
+                <div class="form-group">
+                    <label>Tanggal Kunjungan</label>
+                    <input type="date">
+                </div>
+                <div class="form-group">
+                    <label>Jumlah Peserta</label>
+                    <input type="number">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Jenis Program</label>
+                <select>
+                    <option>Edukasi Smart Farming</option>
+                    <option>Workshop IoT</option>
+                    <option>Wisata Organik</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Pilih Lokasi</label>
+                <select>
+                    <option>Tasikmalaya</option>
+                    <option>Garut</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Catatan Khusus</label>
+                <textarea rows="4"></textarea>
+            </div>
+            <label class="checkbox">
+                <input type="checkbox" required> Konfirmasi data sudah benar
+            </label>
+            <button type="submit" class="btn-submit">Kirim Pendaftaran</button>
+        </form>
 
+        <hr>
+        <div class="support-info">
+            <h3>Contact Support</h3>
+            <p>Email: support@agrosmart.com | Admin: 0812-9999-8888</p>
+        </div>
+
+        <div class="faq">
+            <h3>FAQ</h3>
+            <details>
+                <summary>Apa saja program yang tersedia?</summary>
+                <p>Smart farming, IoT Workshop, dan Kebun Organik.</p>
+            </details>
+            <details>
+                <summary>Minimal jumlah peserta?</summary>
+                <p>Minimal 10 orang untuk kunjungan grup.</p>
+            </details>
+            <details>
+                <summary>Apakah tersedia guide?</summary>
+                <p>Ya, setiap kunjungan didampingi edukator ahli.</p>
+            </details>
+        </div>
+    </div>
 </body>
 </html>
